@@ -42,11 +42,10 @@ def fit_to_width(string, limit):
         while word_list and len(new_string) + len(word_list[0]) <= limit:
             
             new_string = new_string + word_list.pop(0) + " "
-​
-        print(new_string)
+        print(new_string.strip())
 
 
 if __name__ == '__main__':
     import doctest
     if doctest.testmod().failed == 0:
-        print('\n✨ ALL TESTS PASSED!\n')
+        print('\n ALL TESTS PASSED!\n')
